@@ -26,8 +26,10 @@ if (character) == (word)[4]:
     print((character) + " found at index 4")
     n = n + 1
 if n == 0:
-    print("No instances of d found in" + (word))
+    print("No instances of " + (character) + " found in " + (word))
 else: 
-    print(str(n) + " instances of e found in " + (word))
-
+    if n == 1:
+        print("1" + " instance of " + (character) + " found in " + (word))        
+    else:
+        print(str(n) + " instances of " + (character) + " found in " + (word))
 __author__ = "730510546"
